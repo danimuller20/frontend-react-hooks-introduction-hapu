@@ -1,0 +1,42 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -6rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  height: auto;
+  width: 328px;
+  letter-spacing: -0.01em;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .sectionContainer {
+    margin-top: 5rem;
+    max-width: 144rem;
+    margin: 3rem auto auto auto;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    width: 48.3rem;
+  }
+}

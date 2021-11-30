@@ -1,0 +1,59 @@
+.heroContainer {
+  background-image: url(../../resources/mobile-background.png), var( --header-image);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  height: 32rem;
+  margin: -7.8rem auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.headingContainer {
+  margin: 5rem 2rem;
+}
+
+.title, .subtitle {
+  color: var(--white);
+}
+
+.title {
+font-weight: 500;
+font-size: 2.8rem;
+line-height: 3.2rem;
+letter-spacing: -0.01em;
+width: 22.5rem;
+height: 6.4rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 31.2rem;
+  height: 4.8rem;
+}
+
+@media (min-width: 900px) {
+  .heroContainer {
+    background-image: url(../../resources/desktop-background.png), var( --header-image);
+    height: 30.4rem;
+    margin: -7.5rem auto;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.03em;
+    height: 2rem;
+    width: 499px;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    height: 2.8rem;
+    width: 530px;
+  }
+}

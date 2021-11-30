@@ -1,0 +1,10 @@
+@media (min-width: 900px) {
+  .profileContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 23rem;
+    max-width: 144rem;
+    margin: auto;
+  }
+}

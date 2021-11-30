@@ -1,0 +1,109 @@
+.headerButton {
+  background-color: var(--primary);
+  border: hidden;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--white);
+  border-radius: 0.4rem;
+  padding: 1.2rem 2rem;
+  width: 23.1rem;
+  height: 4.4rem;
+  cursor: pointer;
+}
+
+.profileButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.4rem;
+  background: transparent;
+  border: 0.2rem solid var(--secondary);
+  justify-content: center;
+  margin: auto;
+  height: 6.8rem;
+  width: 32.8rem;
+}
+
+.profileButton > span {
+  font-weight: normal;
+  color: var(--secondary)
+}
+
+.profileButton > span:nth-child(1) {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.profileButton > span:nth-child(2) {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.coloredButton, .discoloredButton {
+  font-weight: normal;
+  width: 16rem;
+  height: 5.2rem;
+  border-radius: 40px;
+  padding: 1.2rem 2rem;
+  border: hidden;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  cursor: pointer;
+  border: solid 0.2rem var(--secondary-lightest);
+}
+
+.coloredButton {
+  background: var(--secondary-lightest);
+  color: var(--secondary);
+}
+
+.discoloredButton {
+  background: transparent;
+  color: var(--secondary-light);
+}
+
+.formButton {
+  border-radius: 0.4rem;
+  height: 4.8rem;
+  width: 32.8rem;
+  border: hidden;
+  background: var(--primary);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.formButton:disabled {
+  cursor: not-allowed;
+  background: #00a87094;
+}
+
+.footerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: hidden;
+  width: 30.4rem;
+  height: 6.8rem;
+  border-radius: 0.4rem;
+  background: var(--secondary);
+  gap: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .headerButton {
+      margin-top: 1rem;
+  }
+
+  .profileButton {
+    margin-left: 0;
+  }
+
+  .formButton {
+    width: 9.6rem;
+  }
+}

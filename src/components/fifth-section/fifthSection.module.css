@@ -1,0 +1,56 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.title, .paragraph {
+  text-align: center;
+  height: auto;
+  width: 32.8rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  margin: 5rem 0 0 0;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.waring {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: -2rem;
+  width: 16rem;
+}
+
+@media (min-width: 900px) {
+  .title, .paragraph {
+    width: 100%;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .inputContainer {
+    flex-direction: row;
+  }
+
+  .input {
+    width: 23.2rem;
+  }
+
+  .waring {
+    margin: 1rem 10rem 1rem 0;
+  }
+}

@@ -1,0 +1,16 @@
+.divider, .noneDisplay {
+  margin-top: 10rem;
+  border: 0.1rem solid var(--grey-88);
+  width: 32.8rem;
+}
+
+@media (min-width: 1000px) {
+  .divider {
+    margin-top: 13rem;
+    width: 78.4rem;
+  }
+
+  .noneDisplay {
+    display: none;
+  }
+}

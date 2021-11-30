@@ -1,0 +1,82 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.profileImage {
+  margin-top: 12rem;
+  width: 72px;
+  height: 72px;
+}
+
+.title, .subtitle {
+  font-weight: 500;
+  line-height: 3.2rem;
+  letter-spacing: -0.01em;
+}
+
+.title {
+  font-size: 2.8rem;
+  width: 10.1rem;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+  width: 32.8rem;
+  height: auto;
+  margin: -1rem 0 0 0;
+}
+
+.profileList {
+  margin: 4rem 0 0 -2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: -5rem;
+}
+
+.profileList li::before {
+  content:'\2022';
+  display: block;
+  position: relative;
+  max-width: 0px;
+  max-height: 0px;
+  left: -2rem;
+  color: var(--gray-64);
+  font-size: 2rem;
+}
+
+.profileList li, .description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  width: 32.8rem;
+  height: 8.4rem;
+}
+
+.description {
+  margin-bottom: 3.5rem;
+  height: auto;
+}
+
+.profileList li {
+  width: 30.9rem;
+  height: auto;
+}
+
+@media (min-width: 1000px) {
+  .subtitle, .description {
+    width: 48.4rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+
+  .profileList li {
+    width: 46.6rem;
+  }
+}
